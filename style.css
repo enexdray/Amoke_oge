@@ -1,0 +1,171 @@
+/* Custom color palette */
+:root {
+    --beige-50: #faf6f0;
+    --beige-100: #f5ebdc;
+    --beige-200: #e8d9c0;
+    --beige-300: #d9c4a1;
+    --beige-400: #c9ab7d;
+    --beige-500: #b8935c;
+    --beige-600: #a07e4d;
+    --beige-700: #856840;
+    --beige-800: #6b5333;
+    --beige-900: #534126;
+    
+    --brown-50: #f8f5f2;
+    --brown-100: #e7ddd3;
+    --brown-200: #d5c4b4;
+    --brown-300: #c2aa94;
+    --brown-400: #ae8f74;
+    --brown-500: #997555;
+    --brown-600: #815c47;
+    --brown-700: #69453a;
+    --brown-800: #51302d;
+    --brown-900: #3a1d20;
+}
+
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--brown-900);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Background colors */
+.bg-beige-50 { background-color: var(--beige-50); }
+.bg-beige-100 { background-color: var(--beige-100); }
+.bg-beige-200 { background-color: var(--beige-200); }
+.bg-beige-300 { background-color: var(--beige-300); }
+.bg-beige-400 { background-color: var(--beige-400); }
+.bg-beige-500 { background-color: var(--beige-500); }
+.bg-beige-600 { background-color: var(--beige-600); }
+.bg-beige-700 { background-color: var(--beige-700); }
+.bg-beige-800 { background-color: var(--beige-800); }
+.bg-beige-900 { background-color: var(--beige-900); }
+
+.bg-brown-50 { background-color: var(--brown-50); }
+.bg-brown-100 { background-color: var(--brown-100); }
+.bg-brown-200 { background-color: var(--brown-200); }
+.bg-brown-300 { background-color: var(--brown-300); }
+.bg-brown-400 { background-color: var(--brown-400); }
+.bg-brown-500 { background-color: var(--brown-500); }
+.bg-brown-600 { background-color: var(--brown-600); }
+.bg-brown-700 { background-color: var(--brown-700); }
+.bg-brown-800 { background-color: var(--brown-800); }
+.bg-brown-900 { background-color: var(--brown-900); }
+
+/* Text colors */
+.text-beige-50 { color: var(--beige-50); }
+.text-beige-100 { color: var(--beige-100); }
+.text-beige-200 { color: var(--beige-200); }
+.text-beige-300 { color: var(--beige-300); }
+.text-beige-400 { color: var(--beige-400); }
+.text-beige-500 { color: var(--beige-500); }
+.text-beige-600 { color: var(--beige-600); }
+.text-beige-700 { color: var(--beige-700); }
+.text-beige-800 { color: var(--beige-800); }
+.text-beige-900 { color: var(--beige-900); }
+
+.text-brown-50 { color: var(--brown-50); }
+.text-brown-100 { color: var(--brown-100); }
+.text-brown-200 { color: var(--brown-200); }
+.text-brown-300 { color: var(--brown-300); }
+.text-brown-400 { color: var(--brown-400); }
+.text-brown-500 { color: var(--brown-500); }
+.text-brown-600 { color: var(--brown-600); }
+.text-brown-700 { color: var(--brown-700); }
+.text-brown-800 { color: var(--brown-800); }
+.text-brown-900 { color: var(--brown-900); }
+
+/* Border colors */
+.border-beige-200 { border-color: var(--beige-200); }
+.border-beige-300 { border-color: var(--beige-300); }
+.border-brown-600 { border-color: var(--brown-600); }
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Menu categories */
+.menu-category {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--beige-100);
+    color: var(--brown-700);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-category:hover {
+    background-color: var(--beige-200);
+}
+
+.menu-category.active {
+    background-color: var(--brown-600);
+    color: white;
+}
+
+/* Menu sections */
+.menu-section {
+    transition: all 0.3s ease;
+}
+
+/* Review stars */
+.review-star {
+    color: var(--beige-300);
+    transition: all 0.2s ease;
+}
+
+.review-star:hover,
+.review-star.active {
+    color: var(--yellow-400);
+    fill: var(--yellow-400);
+}
+
+/* Form inputs */
+input, textarea {
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--brown-500);
+}
+
+/* Buttons */
+button {
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+
+/* Animation for order status */
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.pulse {
+    animation: pulse 1.5s infinite;
+}
